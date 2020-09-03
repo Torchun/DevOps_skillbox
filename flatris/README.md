@@ -1,12 +1,15 @@
 Commands used:
 
-# @server:
+## @server:
+```
 sudo apt-get update
 sudo apt-get install git docker docker-compose
 sudo usermod -aG docker $USER
 git clone https://github.com/timurb/flatris.git
+```
 
-# create/modify Dockerfile
+## create/modify Dockerfile
+```
 cd flatris/
 docker build . -t flatris
 docker-compose build
@@ -14,11 +17,7 @@ docker-compose up
 docker-compose up -d
 docker-compose logs
 docker-compose down
-
-
-
-
-
+```
 
 
 [![Flatris](flatris.png)](https://flatris.space/)
